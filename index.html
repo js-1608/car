@@ -13,8 +13,143 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		/* Some basic styling, you can customize further */
+		.container2 {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.option {
+			padding: 10px;
+			border: 1px solid #ccc;
+			cursor: pointer;
+		}
+		.option:hover {
+			background-color: #f0f0f0;
+		}
+		.option.active {
+			background-color: #dcdcdc;
+			border: 2px solid #000;
+			border-radius: 5px;
+		}
+		.images {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 20px;
+		}
+		.image-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			/* border: 1px solid rebeccapurple; */
+			width: 100%;
+		}
+		.image {
+			width: 100%;
+			height: 100%;
+			margin: 10px;
+			border: 1px solid #ccc;
+		}
+		.details {
+			text-align: center;
+			margin-top: 10px;
+		}
+		.contact-btn {
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 10px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 10px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		.contact-btn:hover {
+			background-color: #45a049;
+		}
+		.contact_info {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 20px;
+			justify-content: end;
+		}
+		@media (max-width: 920px) {
+			.contact_info {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 5px;
+				justify-content: end;
+			}
+			.hide_info {
+				display: none;
+			}
+		}
+	</style>
 </head>
 <body>
+<<<<<<< HEAD
+
+	<div style="display: flex; background-color: black;color: #ccc; ">
+		<div class="col">
+			<div class="quickLinks-layout">
+				<div class="quickLinks-map">
+					<address>
+						<i class="icon-149984"></i>3261 Anmoore Road, Brooklyn, NY 11230
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="col" >
+			
+					<ul class="contact_info" >
+						<li>
+							<a href="#"><i class="icon-15874"></i> +01 123 456 78</a>
+						</li>
+						<li class="hide_info">
+							<i class="icon-icon"></i> 9:00 AM – 9:00 PM
+						</li>
+						<li>
+							<a href="mailto:info@youremal.com"><i class="icon-mail"></i> info@youremal.com</a>
+						</li>
+					</ul>
+		</div>
+	</div>
+		<div class="mainSlider">
+			<div class="slide">
+				<div class="img--holder" data-bg="images/slider/slide-01.jpg"></div>
+				<div class="slide-content">
+					<div class="container" data-animation="fadeInUpSm" data-animation-delay="0s">
+						<a href="inventory.html" class="tt-caption-custom">
+							<div class="tt-title">
+								<div class="text-small">We Don't Sell Cars</div>
+								<div class="text-large">We Sell<br>a DREAM</div>
+							</div>
+							<span><i class="icon-handsshake"></i>Get Approved</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="img--holder"  data-bg="images/slider/slide-02.jpg"></div>
+				<div class="slide-content">
+					<div class="container" data-animation="fadeInUpSm" data-animation-delay="0s">
+						<div class="tp-caption-01-01" >Shop Cars for Sale</div>
+						<div class="tp-caption-01-02">HUGE DISCOUNTS<br>up to <span class="tt-default-color">25%</span></div>
+						<div class="tp-caption-01-03">COMPLETE HAPPINESS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- tt-mobile menu -->
+
+
+=======
 <div class="tt-colorswatch">
 <!-- 	<div class="tt-colorswatch-options">
 		<a href="#" class="colorswatch1 active js-swatch-color"></a>
@@ -71,20 +206,21 @@
         <div class="mm-backbtn">Back</div>
     </div>
 </nav>
+>>>>>>> 9c5db35bf2b56ab0ad98151bd8454900ee464794
 <div id="tt-pageContent">
 	<div class="container-indent no-margin">
 		<div class="mainSlider-layout">
-			<div class="loading-content">
+			<!-- <div class="loading-content">
 				<div class="loading-dots">
 					<i></i>
 					<i></i>
 					<i></i>
 					<i></i>
 				</div>
-			</div>
-			<div class="mainSlider">
-				<div class="slide">
-					<div class="img--holder" data-bg="images/slider/slide-01.jpg"></div>
+			</div> -->
+			<!-- <div class="mainSlider" style="height: 25rem;">
+				<div class="slide" >
+					<div class="img--holder" data-bg="images/slider/slide-01.jpg" style="height: 5rem;"></div>
 					<div class="slide-content">
 						<div class="container" data-animation="fadeInUpSm" data-animation-delay="0s">
 							<a href="inventory.html" class="tt-caption-custom">
@@ -107,10 +243,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
-	<div class="container-indent no-margin">
+	<div class="container-indent no-margin" style="margin-top: 5%;">
 		<div class="container tt-container-fluid-mobile">
 			<div class="tt-search-filter">
 				<i class="tt-icon-filter icon-carsearch"></i>
@@ -245,27 +381,986 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-indent-02">
-		<div class="container-fluid">
-			<div class="tt-block-title">
-				<h3 class="tt-title">Types of Vehicle</h3>
-				<div class="tt-description">NEW &amp; USED CARS FOR SALE</div>
+	<div id="tt-product-listing" class="tt-product-listing row">
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_01.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-promo">
+								Great Deal!
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2016 Hunday Elentra </a></h2>
+							<div class="tt-description">
+								SE 4dr Sedan (1.8L 4cyl 6A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">List:</span>
+							<span class="tt-price">$10,295</span>
+							<span class="tt-info">Estimated Loan Payment: <span>$192/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						<!-- <li><a href="#" title="COMPARE" class="tooltip compare-toggle"><i class="icon-compare"></i></a></li> -->
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
 			</div>
-			<!--carusel-->
-			<div class="js-carousel tt-arrow-center-fluid tt-arrow-color02 slick-alignment-arrows" data-item="5" data-dots="true">
-				<a href="inventory.html" class="tt-media-02">
-					<img src="images/custom/media02-img-01.jpg" alt="">
-					<div class="tt-description">
-						<h5 class="tt-title">Sedan <span class="tt-total">12 <span>Offers</span></span></h5>
-						<span class="tt-link-marker">view cars</span>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_02.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+							<span class="tt-label-info">
+								360 HP
+							</span>
+						</span>
+						<span class="tt-data">80,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Lehus LX 570</a></h2>
+							<div class="tt-description">
+								4dr SUV 4WD (5.7L 8cyl 8A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$99,625</span>
+							<span class="tt-old-price">$102,100</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$1.186/mo</span></span>
+						</div>
 					</div>
-				</a>
-				<a href="inventory.html" class="tt-media-02">
-					<img src="images/custom/media02-img-02.jpg" alt="">
-					<div class="tt-description">
-						<h5 class="tt-title">Hatchback <span class="tt-total">7 <span>Offers</span></span></h5>
-						<span class="tt-link-marker">view cars</span>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
 					</div>
+<<<<<<< HEAD
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_03.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Volve XC60</a></h2>
+							<div class="tt-description">
+								T5 Momentum SUV 2.0L Turbo 8A
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$48,430</span>
+							<span class="tt-old-price">$51,210</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$637/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02 tt-no-product">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_04.jpg" alt="">
+						<span class="tt-label-custom"><i class="icon-soldout"></i></span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2014 BWM X1</a></h2>
+							<div class="tt-description">
+								xDrive28i 4dr SUV AWD (2.0L Turbo 8A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-info-price">Request</span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo" data-toggle="modal" data-target="#modalRequest">SEND</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_05.jpg" alt="">
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2009 Sebaru Imperza</a></h2>
+							<div class="tt-description">
+								2.5GT 4dr Sedan AWD 2.5L Turbo 4A
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">LIST:</span>
+							<span class="tt-price">$12,450</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$254/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul> 	
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_06.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+							<span class="tt-label-info02">
+								Just Arrived
+							</span>
+						</span>
+						<span class="tt-data">80,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2017 Nesen Altema</a></h2>
+							<div class="tt-description">
+								4dr SUV 4WD (5.7L 8cyl 8A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">LIST:</span>
+							<span class="tt-price">$27,850</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$425/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_07.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-promo">
+								Great Deal!
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2013 Henda Cevic</a></h2>
+							<div class="tt-description">
+								LX 4dr Sedan (1.8L 4cyl 5A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">List:</span>
+							<span class="tt-price">$10,295</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$241/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_02.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+							<span class="tt-label-info">
+								360 HP
+							</span>
+						</span>
+						<span class="tt-data">80,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Lehus LX 570</a></h2>
+							<div class="tt-description">
+								4dr SUV 4WD (5.7L 8cyl 8A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$99,625</span>
+							<span class="tt-old-price">$102,100</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$325/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_03.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Volve XC60</a></h2>
+							<div class="tt-description">
+								T5 Momentum SUV 2.0L Turbo 8A
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$48,430</span>
+							<span class="tt-old-price">$51,210</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$470/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_01.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-promo">
+								Great Deal!
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2016 Hunday Elentra </a></h2>
+							<div class="tt-description">
+								SE 4dr Sedan (1.8L 4cyl 6A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">List:</span>
+							<span class="tt-price">$10,295</span>
+							<span class="tt-info">Estimated Loan Payment: <span>$192/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_02.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+							<span class="tt-label-info">
+								360 HP
+							</span>
+						</span>
+						<span class="tt-data">80,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Lehus LX 570</a></h2>
+							<div class="tt-description">
+								4dr SUV 4WD (5.7L 8cyl 8A)
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$99,625</span>
+							<span class="tt-old-price">$102,100</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$1.186/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-4 col-lg-3 tt-col-item">
+			<div class="tt-product-02">
+				<div class="tt-image-box">
+					<a href="inventory-item02.html" class="tt-img">
+						<img src="images/product_02/product_02_img_03.jpg" alt="">
+						<span class="tt-label-location">
+							<span class="tt-label-new">
+								NEW
+							</span>
+						</span>
+						<span class="tt-data">118,000 miles</span>
+					</a>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+				</div>
+				<div class="tt-wrapper-description">
+					<div class="tt-row-01">
+						<div class="tt-box-title">
+							<h2 class="tt-title"><a href="inventory-item02.html">2018 Volve XC60</a></h2>
+							<div class="tt-description">
+								T5 Momentum SUV 2.0L Turbo 8A
+							</div>
+						</div>
+						<div class="tt-box-price">
+							<span class="tt-text">MSRP:</span>
+							<span class="tt-price">$48,430</span>
+							<span class="tt-old-price">$51,210</span>
+							<span class="tt-info">Estimated Loan Payment:  <span>$637/mo</span></span>
+						</div>
+					</div>
+					<ul class="tt-icon">
+						<li><a href="#" data-toggle="modal" data-target="#modalAddTestDrive" title="BOOK-RIDE" class="tooltip"><i class="icon-testdrive"></i></a></li>
+						<li><a href="images/product_02/product_02_img_01.jpg" title="GALLERY" class="tooltip tt-btn-zomm"><i class="icon-photo-camera"></i></a></li>
+						
+					</ul>
+					<div class="tt-row-02">
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">FUEL TYPE:</span>
+								<span class="col-designation">Gas</span>
+							</li>
+							<li>
+								<span class="col-title">TRANSMission:</span>
+								<span class="col-designation">Automatic</span>
+							</li>
+							<li>
+								<span class="col-title">Color:</span>
+								<span class="col-designation">Black</span>
+							</li>
+							<li>
+								<span class="col-title">Drive Type:</span>
+								<span class="col-designation">Front Wheel Drive</span>
+							</li>
+						</ul>
+						<ul class="tt-add-info">
+							<li>
+								<span class="col-title">Int. Color:</span>
+								<span class="col-designation">Premium Leather</span>
+							</li>
+							<li>
+								<span class="col-title">VIN:</span>
+								<span class="col-designation">JTJHY7AX6H4250229</span>
+							</li>
+							<li>
+								<span class="col-title">Engine:</span>
+								<span class="col-designation">V6 EcoBoost TT</span>
+							</li>
+							<li>
+								<span class="col-title">Stock number:</span>
+								<span class="col-designation">215838</span>
+							</li>
+						</ul>
+					</div>
+					<div class="tt-btn">
+						<a href="inventory-item02.html" class="tt-btn-moreinfo">Contact us</a>
+					</div>
+				</div>
+=======
 				</a>
 				
 				<a href="inventory.html" class="tt-media-02">
@@ -285,8 +1380,8 @@
 						<span class="tt-link-marker">view cars</span>
 					</div>
 				</a>
+>>>>>>> 9c5db35bf2b56ab0ad98151bd8454900ee464794
 			</div>
-			<!--/carusel-->
 		</div>
 	</div>
 	<div class="container-indent">
@@ -375,7 +1470,7 @@
 							<div class="tt-line-dotted tt-right"></div>
 							<i class="icon-carsearch2"></i>
 						</div>
-						<h6 class="tt-title">View Our Inventory</h6>
+						<h6 class="tt-title">Find your Car</h6>
 					</a>
 					<div class="tt-item-smal">
 						<div class="box-icon">
@@ -388,7 +1483,7 @@
 							<div class="tt-line-dotted tt-right"></div>
 							<i class="icon-tradein"></i>
 						</div>
-						<h6 class="tt-title">Value Your Trade-In</h6>
+						<h6 class="tt-title">Book your car</h6>
 					</a>
 					<div class="tt-item-smal">
 						<div class="box-icon">
@@ -401,7 +1496,7 @@
 							<div class="tt-line-dotted tt-right"></div>
 							<i class="icon-financing"></i>
 						</div>
-						<h6 class="tt-title">Get Easy Financing</h6>
+						<h6 class="tt-title">Fill the details</h6>
 					</a>
 					<div class="tt-item-smal">
 						<div class="box-icon">
@@ -426,124 +1521,90 @@
 				<div class="tt-description">Find your perfect car</div>
 			</div>
 		</div>
-		<div class="portfolio-masonry-layout">
-			<div class="container hidden-mobile">
-				<a href="inventory.html" class="extra-link">View more cars</a>
-			</div>
-			<div class="tt-portfolio-masonry">
-				<div class="tt-filter-nav">
-					<div class="button active" data-filter="*">ALL (294)</div>
-					<div class="button" data-filter=".sort-value-01">New (112)</div>
-					<div class="button" data-filter=".sort-value-02">Used (136)</div>
-					<div class="button" data-filter=".sort-value-03">Certified (46)</div>
-				</div>
-				<div class="tt-portfolio-content layout-default">
-					<div class="element-item sort-value-02">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img01.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title"><span>NEW</span> 2017 Toytoa Cilica</h5>
-									<span class="tt-price">$24.850</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-02">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img02.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title"><span>NEW</span> 2018 Lehus CP200h</h5>
-									<span class="tt-price">$30.250</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-01">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img03.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title"><span>NEW</span> 2019 Chrevolet Cruse</h5>
-									<span class="tt-price">$24.850</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-03">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img04.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title">2019 Toytoa Carella Hatchback</h5>
-									<span class="tt-price">$37.150</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item element-item-2x sort-value-01">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img09.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title"><span>NEW</span> 2018 Chawy Traverse Specs</h5>
-									<span class="tt-price">$44.550</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-02">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img05.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title">2017 Heundu Genesis G90</h5>
-									<span class="tt-price">$24.000</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-02">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img06.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title">2019 Codallac CT6</h5>
-									<span class="tt-price">$17.850</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-03">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img07.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title"><span>NEW</span> 2018 Shroda Kopiaq L&K</h5>
-									<span class="tt-price">$19.250</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="element-item sort-value-01">
-						<a class="tt-portfolio-item" href="inventory-item02.html">
-							<figure>
-								<img src="images/gallery/gallery_img08.jpg" alt="">
-								<figcaption>
-									<h5 class="tt-title">2018 Chrevolet Equinex</h5>
-									<span class="tt-price">$33.850</span>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="container visible-mobile">
-				<a href="inventory-no-sidebar.html" class="extra-link">View more cars</a>
-			</div>
+		<div class="container2">
+			<div class="option" id="sedan">Sedan</div>
+			<div class="option" id="xuv">XUV</div>
+			<div class="option" id="hatchback">Hatchback</div>
+		</div>
+	
+		<div class="images" id="image-container">
+			<!-- Images will be displayed here -->
 		</div>
 	</div>
+	
+	<script>
+		const sedanImages = [
+			{ name: 'Aura', price: '$35/hr', image: './images/aura.webp' },
+			{ name: 'Honda city', price: '$40/hr', image: './images/city.webp' },
+			{ name: 'Swift Dzire', price: '$40/hr', image: './images/swift.webp' }
+		];
+	
+		const xuvImages = [
+			{ name: 'XUV 1', price: '$40/hr', image: './images/innova-crysta.webp' },
+			{ name: 'XUV 2', price: '$45/hr', image: './images/innova.avif' },
+			{ name: 'XUV 3', price: '$50/hr', image: './images/ertiga.webp' }
+		];
+	
+		const hatchbackImages = [
+			{ name: 'Celerio', price: '$25/hr', image: './images/celerio.jpg' },
+			{ name: 'Maruti suzuki', price: '$28/hr', image: './images/marutisuzuki.png' },
+			{ name: 'Wagaonr', price: '$30/hr', image: './images/wagon.webp' }
+		];
+	
+		const imageContainer = document.getElementById('image-container');
+		const options = document.querySelectorAll('.option');
+	
+		options.forEach(option => {
+			option.addEventListener('click', () => {
+				options.forEach(opt => opt.classList.remove('active'));
+				option.classList.add('active');
+				if (option.id === 'sedan') {
+					displayImages(sedanImages);
+				} else if (option.id === 'xuv') {
+					displayImages(xuvImages);
+				} else if (option.id === 'hatchback') {
+					displayImages(hatchbackImages);
+				}
+			});
+		});
+	
+		function displayImages(images) {
+			imageContainer.innerHTML = '';
+			images.forEach(image => {
+				const imageDiv = document.createElement('div');
+				imageDiv.classList.add('image-container');
+				
+				const img = document.createElement('img');
+				img.src = image.image;
+				img.alt = image.name;
+				img.classList.add('image');
+				imageDiv.appendChild(img);
+	
+				const details = document.createElement('div');
+				details.classList.add('details');
+				details.innerHTML = `<p>${image.name}</p><p>${image.price}</p><button class="contact-btn" onclick="dialNumber('9536476286')">Contact Us</button>`;
+				imageDiv.appendChild(details);
+	
+				imageContainer.appendChild(imageDiv);
+			});
+		}
+	
+		function dialNumber(phoneNumber) {
+			window.location.href = 'tel:' + phoneNumber;
+		}
+	
+		// Display sedan images by default and set the default active option
+		window.onload = () => {
+			document.getElementById('sedan').classList.add('active');
+			displayImages(sedanImages);
+		};
+	</script>
+	
+
+	
+	
+	
+
 	<div class="container-indent no-margin">
 		<div class="tt-layout01-bg">
 			<div class="container">
@@ -671,47 +1732,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-indent no-margin">
-		<div class="tt-promo-01" data-bg="images/custom/box-promo01.jpg">
-			<div class="container">
-				<div class="tt-block-title">
-					<h3 class="tt-title">What Have We Achieved</h3>
-					<div class="tt-description">Real Figures</div>
-				</div>
-				<div class="tt-promo-layout counter-js slider-layout">
-					<div class="tt-item">
-						<div class="box-value">
-							<i class="icon-vehicles"></i>
-							<span><span class="tt-counter" data-from="0" data-to="4567">0</span></span>
-						</div>
-						<h6 class="tt-title">Vehicles In Stock</h6>
-					</div>
-					<div class="tt-item">
-						<div class="box-value">
-							<i class="icon-awards"></i>
-							<span><span class="tt-counter" data-from="0" data-to="254">0</span></span>
-						</div>
-						<h6 class="tt-title">Awards</h6>
-					</div>
-					<div class="tt-item">
-						<div class="box-value">
-							<i class="icon-customers"></i>
-							<span><span class="tt-counter" data-from="0" data-to="100">0</span>%</span>
-						</div>
-						<h6 class="tt-title">Happy Customers</h6>
-					</div>
-					<div class="tt-item">
-						<div class="box-value">
-							<i class="icon-staff"></i>
-							<span><span class="tt-counter" data-from="0" data-to="50">0</span>+</span>
-						</div>
-						<h6 class="tt-title">Qualified Staff</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-indent">
+	
+	<!-- <div class="container-indent">
 		<div class="container">
 			<div class="tt-block-title">
 				<h3 class="tt-title">What's New</h3>
@@ -860,18 +1882,8 @@
 				<div class="slide-img03"><img src="images/custom/parallax01-img03.png" alt=""></div>
 			</div>
 		</div>
-	</div>
-	<div class="container-indent">
-		<div class="container">
-			<div class="tt-block-title tt-title-custom">
-				<h3 class="tt-title">Sell Your Car Quickly and Easily with Us</h3>
-				<div class="tt-description">It was really easy to sell your car!</div>
-			</div>
-			<div class="text-center tt-indent-btn">
-				<a href="#" class="btn" data-toggle="modal" data-target="#modalAddYourItem">SUBMIT YOUR VEHICLE NOW</a>
-			</div>
-		</div>
-	</div>
+	</div> -->
+	
 	<div class="container-indent container-indent-03 tt-mobile-hidden">
 		<div class="tt-map">
 			<a href="#" class="tt-btn-toggle"></a>
@@ -967,7 +1979,7 @@
 	</div>
 	<div class="tt-footer-copyright">
 		<div class="container">
-			<span>&copy; Copyright 2022 Car Leader</span> <a href="#">PRIVACY POLICY</a>
+			<span>&copy; Copyright 2024 </span> <a href="mailto:shivam953647@gmail.com" target="_top"> DEVELOPED AND DESIGNED BY SHIVAM</a>
 		</div>
 	</div>
 </footer>
@@ -1123,130 +2135,7 @@
 	</div>
 </div>
 <!-- compareSlide -->
-<div id="compareSlide" class="layout-slide">
-	<div class="slide-content">
-		<div class="slide-title">
-			<h6 class="title">Compare Vehicles</h6>
-				<a class="btn-close-slide icon-close"></a>
-			</div>
-			<div class="tt-wrapper-col">
-				<div class="col-value">
-				<ul>
-					<li>Price:</li>
-					<li>Make</li>
-					<li>Model</li>
-					<li>MILEAGE:</li>
-					<li>FUEL TYPE:</li>
-					<li>YEAR:</li>
-					<li>TRANSMission:</li>
-					<li>Drive Type:</li>
-					<li>Color:</li>
-					<li>Int. Color:</li>
-					<li>VIN:</li>
-					<li>Engine:</li>
-					<li>Stock number:</li>
-					<li>Features &amp; Options</li>
-				</ul>
-			</div>
-			<div class="col-item">
-				<a href="#" class="item-close"><i class="icon-close"></i></a>
-				<div class="img-obj"><img src="images/product_02/product_02_img_02.jpg" alt=""></div>
-				<ul>
-					<li class="value-item value-select">$99,625</li>
-					<li class="value-item">Lehus</li>
-					<li class="value-item">LX 570</li>
-					<li class="value-item">0 miles</li>
-					<li class="value-item">Gas</li>
-					<li class="value-item">2018</li>
-					<li class="value-item">Automatic</li>
-					<li class="value-item">Front Wheel Drive</li>
-					<li class="value-item">Jet Black</li>
-					<li class="value-item">Cabernet Premium Leather</li>
-					<li class="value-item">JTJHY7AX6H4250229</li>
-					<li class="value-item">V6 EcoBoost TT</li>
-					<li class="value-item">252832</li>
-					<li class="value-item value-multy">
-						2-Stage Unlocking Doors,
-						ABS: 4-Wheel,Active Head
-						Restraints: Dual Front,
-						Air Conditioning, Air
-						Filtration, Airbag
-						Deactivation: Occupant
-						Sensing Passenger,
-						Ambient Lighting, Antenna
-						Type: Diversity, Anti-Theft
-						System:2-Stage Unlocking Doors,
-						ABS: 4-Wheel,Active Head
-						2-Stage Unlocking Doors,
-						ABS: 4-Wheel,Active Head
-					</li>
-				</ul>
-			</div>
-			<div class="col-item">
-				<a href="#" class="item-close"><i class="icon-close"></i></a>
-				<div class="img-obj"><img src="images/product_02/product_02_img_03.jpg" alt=""></div>
-				<ul>
-					<li class="value-item value-select">$48,430</li>
-					<li class="value-item">Volve</li>
-					<li class="value-item">XC60</li>
-					<li class="value-item">0 miles</li>
-					<li class="value-item">Gas</li>
-					<li class="value-item">2018</li>
-					<li class="value-item">Automatic</li>
-					<li class="value-item">Front Wheel Drive</li>
-					<li class="value-item">Jet Black</li>
-					<li class="value-item">Cabernet Premium Leather</li>
-					<li class="value-item">JTJHY7AX6H4250229</li>
-					<li class="value-item">V6 EcoBoost TT</li>
-					<li class="value-item">215838</li>
-					<li class="value-item value-multy">
-						2-Stage Unlocking Doors,
-						ABS: 4-Wheel,Active Head
-						Restraints: Dual Front,
-						Air Conditioning, Air
-						Filtration, Airbag
-						Deactivation: Occupant
-						Sensing Passenger,
-						Ambient Lighting, Antenna
-						Type: Diversity, Anti-Theft
-						System:
-					</li>
-				</ul>
-			</div>
-			<div class="col-item">
-				<a href="#" class="item-close"><i class="icon-close"></i></a>
-				<div class="img-obj"><img src="images/product_02/product_02_img_06.jpg" alt=""></div>
-				<ul>
-					<li class="value-item value-select">$27,850</li>
-					<li class="value-item">Nesen</li>
-					<li class="value-item">Almera</li>
-					<li class="value-item">80,000 miles</li>
-					<li class="value-item">Gas</li>
-					<li class="value-item">2017</li>
-					<li class="value-item">Automatic</li>
-					<li class="value-item">Front Wheel Drive</li>
-					<li class="value-item">Jet Black</li>
-					<li class="value-item">Cabernet Premium Leather</li>
-					<li class="value-item">JTJHY7AX6H4250229</li>
-					<li class="value-item">V6 EcoBoost TT</li>
-					<li class="value-item">112532</li>
-					<li class="value-item value-multy">
-						2-Stage Unlocking Doors,
-						ABS: 4-Wheel,Active Head
-						Restraints: Dual Front,
-						Air Conditioning, Air
-						Filtration, Airbag
-						Deactivation: Occupant
-						Sensing Passenger,
-						Ambient Lighting, Antenna
-						Type: Diversity, Anti-Theft
-						System:
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
+
 <script src="external/jquery/jquery.min.js"></script>
 <script src="external/bootstrap/js/bootstrap.min.js"></script>
 <script src="external/imagesloaded/imagesloaded.pkgd.min.js"></script>
