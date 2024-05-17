@@ -10769,7 +10769,7 @@ Header stuck
 
 @media (min-width: 1025px) {
   .mainSlider {
-    height: 890px; } }
+    height: 700px; } }
 
 @media (max-width: 1024px) and (min-width: 551px) {
   .mainSlider {
@@ -10788,7 +10788,7 @@ Header stuck
   background-repeat: no-repeat; }
   @media (min-width: 1025px) {
     .mainSlider .slide .img--holder {
-      height: 890px; } }
+      height: 700px; } }
   @media (max-width: 1024px) and (min-width: 551px) {
     .mainSlider .slide .img--holder {
       height: 354px; } }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Booking</title>
+    <style>
+        /* Some basic styling, you can customize further */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .option {
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .option:hover {
+            background-color: #f0f0f0;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        .details {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="option" id="sedan">Sedan</div>
+        <div class="option" id="xuv">XUV</div>
+        <div class="option" id="hatchback">Hatchback</div>
+    </div>
+
+    <div class="images" id="image-container">
+        <!-- Images will be displayed here -->
+        <H1>ghu</H1>
+    </div>
+
+    <script>
+        // JavaScript to handle image display based on option clicked
+        const sedanImages = [
+            { name: 'Sedan 1', price: '$30/hr', image: 'sedan1.jpg' },
+            { name: 'Sedan 2', price: '$35/hr', image: 'sedan2.jpg' },
+            { name: 'Sedan 3', price: '$40/hr', image: 'sedan3.jpg' }
+        ];
+
+        const xuvImages = [
+            { name: 'XUV 1', price: '$40/hr', image: 'xuv1.jpg' },
+            { name: 'XUV 2', price: '$45/hr', image: 'xuv2.jpg' },
+            { name: 'XUV 3', price: '$50/hr', image: 'xuv3.jpg' }
+        ];
+
+        const hatchbackImages = [
+            { name: 'Hatchback 1', price: '$25/hr', image: 'hatchback1.jpg' },
+            { name: 'Hatchback 2', price: '$28/hr', image: 'hatchback2.jpg' },
+            { name: 'Hatchback 3', price: '$30/hr', image: 'hatchback3.jpg' }
+        ];
+
+        const imageContainer = document.getElementById('image-container');
+
+        document.getElementById('sedan').addEventListener('click', () => {
+            displayImages(sedanImages);
+        });
+
+        document.getElementById('xuv').addEventListener('click', () => {
+            displayImages(xuvImages);
+        });
+
+        document.getElementById('hatchback').addEventListener('click', () => {
+            displayImages(hatchbackImages);
+        });
+
+        function displayImages(images) {
+            imageContainer.innerHTML = '';
+            images.forEach(image => {
+                const imageDiv = document.createElement('div');
+                imageDiv.classList.add('image-container');
+                
+                const img = document.createElement('img');
+                img.src = image.image;
+                img.alt = image.name;
+                img.classList.add('image');
+                imageDiv.appendChild(img);
+
+                const details = document.createElement('div');
+                details.classList.add('details');
+                details.innerHTML = `<p>${image.name}</p><p>${image.price}</p><button>Contact Us</button>`;
+                imageDiv.appendChild(details);
+
+                imageContainer.appendChild(imageDiv);
+            });
+        }
+    </script>
+</body>
+</html>
